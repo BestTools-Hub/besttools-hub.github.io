@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="اتصل بنا - تواصل مع BestTools لاقتراحات أو استفسارات">
+    <meta property="og:title" content="اتصل بنا - BestTools">
+    <meta property="og:description" content="نحن هنا للاستماع إليك! تواصل معنا لاقتراحاتك واستفساراتك">
+    <meta property="og:type" content="website">
+    <title>اتصل بنا - BestTools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠️</text></svg>">
+</head>
+<body>
+    <div class="ad-banner top-ad">
+        <span class="ad-placeholder">إعلان</span>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">BestTools</span>
+            </a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="tools.html" class="nav-link">الأدوات</a></li>
+                <li><a href="top10.html" class="nav-link">Top 10</a></li>
+                <li><a href="about.html" class="nav-link">عن الموقع</a></li>
+                <li><a href="contact.html" class="nav-link active">اتصل بنا</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="تبديل الوضع">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <a href="tools.html" class="btn btn-primary nav-cta">استكشف الآن</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="القائمة">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contact-page">
+        <section class="page-header-section">
+            <div class="container">
+                <h1 class="page-title">اتصل بنا</h1>
+                <p class="page-desc">نحن هنا للاستماع إليك! تواصل معنا لاقتراحاتك واستفساراتك</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info fade-in">
+                        <div class="contact-card">
+                            <div class="contact-icon">📧</div>
+                            <h3>البريد الإلكتروني</h3>
+                            <p>info@besttools.com</p>
+                            <a href="mailto:info@besttools.com">راسلنا</a>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">💬</div>
+                            <h3>وسائل التواصل</h3>
+                            <p>تابعنا على وسائل التواصل</p>
+                            <div class="social-links">
+                                <a href="#" class="social-link">𝕏</a>
+                                <a href="#" class="social-link">f</a>
+                                <a href="#" class="social-link">in</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">⏰</div>
+                            <h3>أوقات العمل</h3>
+                            <p>السبت - الخميس</p>
+                            <p>9 صباحاً - 6 مساءً</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section fade-in">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">الاسم</label>
+                                <input type="text" id="name" name="name" placeholder="اسمك الكامل" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">البريد الإلكتروني</label>
+                                <input type="email" id="email" name="email" placeholder="بريدك@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">الموضوع</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">اختر الموضوع</option>
+                                    <option value="suggestion">اقتراح أداة</option>
+                                    <option value="review">طلب مراجعة</option>
+                                    <option value="partnership">شراكة</option>
+                                    <option value="other">أخرى</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">الرسالة</label>
+                                <textarea id="message" name="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-large">
+                                إرسال الرسالة
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="faq-section fade-in">
+                    <h2>الأسئلة الشائعة</h2>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h3>كيف يمكنني اقتراح أداة؟</h3>
+                            <p>يمكنك التواصل معنا عبر نموذج الاتصال أو البريد الإلكتروني.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>هل المراجعات مدفوعة؟</h3>
+                            <p>لا، جميع مراجعاتنا موضوعية ولا تتأثر بالشراكات.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>كيف يمكنني أن أصبح شريكاً؟</h3>
+                            <p>اختر "شراكة" في نموذج الاتصال وسنتواصل معك.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>هل الأدوات مجانية؟</h3>
+                            <p>نقدم أدوات مجانية وأخرى مدفوعة مع تفاصيل التسعير.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="ad-banner middle-ad">
+            <span class="ad-placeholder">إعلان</span>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">BestTools</span>
+                    </a>
+                    <p class="footer-desc">منصة شاملة لاكتشاف أفضل الأدوات الرقمية والمواقع المفيدة.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-link" aria-label="Facebook">f</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                        <a href="#" class="social-link" aria-label="YouTube">▶</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="tools.html">الأدوات</a></li>
+                        <li><a href="top10.html">Top 10</a></li>
+                        <li><a href="about.html">عن الموقع</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>التصنيفات</h4>
+                    <ul class="footer-links">
+                        <li><a href="tools.html?category=ai">الذكاء الاصطناعي</a></li>
+                        <li><a href="tools.html?category=design">التصميم</a></li>
+                        <li><a href="tools.html?category=productivity">الإنتاجية</a></li>
+                        <li><a href="tools.html?category=marketing">التسويق</a></li>
+                        <li><a href="tools.html?category=development">التطوير</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>النشرة البريدية</h4>
+                    <p class="footer-newsletter">احصل على آخر الأخبار والأدوات</p>
+                    <form class="footer-form">
+                        <input type="email" placeholder="بريدك الإلكتروني">
+                        <button type="submit">→</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="ad-banner footer-ad">
+                    <span class="ad-placeholder">إعلان</span>
+                </div>
+                <p>© 2024 BestTools. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
