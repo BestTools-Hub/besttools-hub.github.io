@@ -18,6 +18,7 @@ const toolsData = [
         rating: 4.9,
         reviews: 12450,
         icon: "🤖",
+        logoUrl: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg",
         affiliateLink: "https://chat.openai.com",
         price: "مجاني - $20/month",
         featured: true,
@@ -42,6 +43,7 @@ const toolsData = [
         rating: 4.8,
         reviews: 5200,
         icon: "🧠",
+        logoUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Claude_logo.svg",
         affiliateLink: "https://claude.ai",
         price: "مجاني - $20/month",
         featured: true,
@@ -66,6 +68,7 @@ const toolsData = [
         rating: 4.6,
         reviews: 7200,
         icon: "📝",
+        logoUrl: "",
         affiliateLink: "https://jasper.ai",
         price: "$40/month",
         featured: false,
@@ -90,6 +93,7 @@ const toolsData = [
         rating: 4.5,
         reviews: 5600,
         icon: "✍️",
+        logoUrl: "",
         affiliateLink: "https://copy.ai",
         price: "مجاني - $49/month",
         featured: false,
@@ -140,6 +144,7 @@ const toolsData = [
         rating: 4.8,
         reviews: 8900,
         icon: "🎨",
+        logoUrl: "https://upload.wikimedia.org/wikipedia/commons/8/8c/Logo_midjourney.svg",
         affiliateLink: "https://midjourney.com",
         price: "$10/month",
         featured: true,
@@ -164,6 +169,7 @@ const toolsData = [
         rating: 4.7,
         reviews: 6800,
         icon: "🖼️",
+        logoUrl: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg",
         affiliateLink: "https://openai.com/dall-e-3",
         price: "$20/month (ChatGPT Plus)",
         featured: true,
@@ -188,6 +194,7 @@ const toolsData = [
         rating: 4.7,
         reviews: 4800,
         icon: "🔥",
+        logoUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Adobe_Express.svg",
         affiliateLink: "https://firefly.adobe.com",
         price: "$4.99/month",
         featured: false,
@@ -212,6 +219,7 @@ const toolsData = [
         rating: 4.6,
         reviews: 9200,
         icon: "🎭",
+        logoUrl: "https://seeklogo.com/images/S/stable-diffusion-logo-979B6D0DB1-seeklogo.com.png",
         affiliateLink: "https://stability.ai",
         price: "مجاني (محلياً)",
         featured: false,
@@ -236,6 +244,7 @@ const toolsData = [
         rating: 4.6,
         reviews: 5200,
         icon: "🎪",
+        logoUrl: "https://leonardocdn.azureedge.net/media/logo.png",
         affiliateLink: "https://leonardo.ai",
         price: "مجاني - $30/month",
         featured: false,
@@ -262,6 +271,7 @@ const toolsData = [
         rating: 4.7,
         reviews: 15200,
         icon: "🎨",
+        logoUrl: "https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg",
         affiliateLink: "https://canva.com",
         price: "مجاني - $13/month",
         featured: true,
@@ -286,6 +296,7 @@ const toolsData = [
         rating: 4.9,
         reviews: 11500,
         icon: "🎯",
+        logoUrl: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
         affiliateLink: "https://figma.com",
         price: "مجاني - $15/month",
         featured: true,
@@ -310,6 +321,7 @@ const toolsData = [
         rating: 4.9,
         reviews: 25000,
         icon: "📸",
+        logoUrl: "https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg",
         affiliateLink: "https://adobe.com/photoshop",
         price: "$22.99/month",
         featured: false,
@@ -334,6 +346,7 @@ const toolsData = [
         rating: 4.5,
         reviews: 8500,
         icon: "🖌️",
+        logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Photopea_logo.svg/512px-Photopea_logo.svg.png",
         affiliateLink: "https://photopea.com",
         price: "مجاني",
         featured: false,
@@ -360,6 +373,7 @@ const toolsData = [
         rating: 4.8,
         reviews: 9800,
         icon: "📝",
+        logoUrl: "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png",
         affiliateLink: "https://notion.so",
         price: "مجاني - $10/month",
         featured: true,
@@ -384,6 +398,7 @@ const toolsData = [
         rating: 4.6,
         reviews: 12500,
         icon: "📋",
+        logoUrl: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Trello-logo.png",
         affiliateLink: "https://trello.com",
         price: "مجاني - $17.50/month",
         featured: false,
@@ -408,6 +423,7 @@ const toolsData = [
         rating: 4.5,
         reviews: 8800,
         icon: "✅",
+        logoUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3b/Asana_logo.svg",
         affiliateLink: "https://asana.com",
         price: "مجاني - $24.99/month",
         featured: false,
@@ -432,6 +448,7 @@ const toolsData = [
         rating: 4.7,
         reviews: 11000,
         icon: "☑️",
+        logoUrl: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Todolist_logo.png",
         affiliateLink: "https://todoist.com",
         price: "مجاني - $5/month",
         featured: false,
@@ -458,6 +475,7 @@ const toolsData = [
         rating: 4.8,
         reviews: 8900,
         icon: "💻",
+        logoUrl: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
         affiliateLink: "https://github.com/features/copilot",
         price: "$10/month",
         featured: false,
@@ -482,6 +500,7 @@ const toolsData = [
         rating: 4.7,
         reviews: 4200,
         icon: "📑",
+        logoUrl: "https://cursor.sh/favicon.ico",
         affiliateLink: "https://cursor.sh",
         price: "مجاني - $20/month",
         featured: false,
@@ -506,6 +525,7 @@ const toolsData = [
         rating: 4.5,
         reviews: 6500,
         icon: "⚡",
+        logoUrl: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Replit_logo.svg",
         affiliateLink: "https://replit.com",
         price: "مجاني - $20/month",
         featured: false,
@@ -532,6 +552,7 @@ const toolsData = [
         rating: 4.7,
         reviews: 18500,
         icon: "✏️",
+        logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Grammarly_logo.svg/512px-Grammarly_logo.svg.png",
         affiliateLink: "https://grammarly.com",
         price: "مجاني - $30/month",
         featured: false,
@@ -556,6 +577,7 @@ const toolsData = [
         rating: 4.6,
         reviews: 4200,
         icon: "📈",
+        logoUrl: "https://upload.wikimedia.org/wikipedia/commons/0/01/SURFER-Logo.svg",
         affiliateLink: "https://surferseo.com",
         price: "$99/month",
         featured: false,
@@ -580,6 +602,7 @@ const toolsData = [
         rating: 4.8,
         reviews: 9500,
         icon: "🔍",
+        logoUrl: "https://upload.wikimedia.org/wikipedia/commons/0/07/Ahrefs_logo.svg",
         affiliateLink: "https://ahrefs.com",
         price: "$99/month",
         featured: false,
@@ -604,6 +627,7 @@ const toolsData = [
         rating: 4.7,
         reviews: 10500,
         icon: "📊",
+        logoUrl: "https://upload.wikimedia.org/wikipedia/commons/3/32/Semrush_Logo.svg",
         affiliateLink: "https://semrush.com",
         price: "$119.95/month",
         featured: false,
@@ -630,6 +654,7 @@ const toolsData = [
         rating: 4.5,
         reviews: 3200,
         icon: "🎬",
+        logoUrl: "https://runwayml.com/favicon.ico",
         affiliateLink: "https://runwayml.com",
         price: "مجاني - $35/month",
         featured: false,
@@ -654,6 +679,7 @@ const toolsData = [
         rating: 4.6,
         reviews: 4800,
         icon: "🎥",
+        logoUrl: "https://synthesia.io/favicon.ico",
         affiliateLink: "https://synthesia.io",
         price: "$30/month",
         featured: false,
@@ -678,6 +704,7 @@ const toolsData = [
         rating: 4.6,
         reviews: 5800,
         icon: "🎙️",
+        logoUrl: "https://upload.wikimedia.org/wikipedia/commons/5/5d/Descript_logo.svg",
         affiliateLink: "https://descript.com",
         price: "مجاني - $24/month",
         featured: false,
@@ -958,7 +985,12 @@ function loadToolDetails(tool) {
     // Update tool logo
     const toolLogo = document.querySelector('.tool-logo');
     if (toolLogo) {
-        toolLogo.innerHTML = `<span style="font-size: 4rem;">${tool.icon}</span>`;
+        if (tool.logoUrl) {
+            toolLogo.innerHTML = `<img src="${tool.logoUrl}" alt="${tool.name}" style="max-width:100%;max-height:100px;object-fit:contain;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <span class="tool-card-icon" style="display:none;font-size:4rem;display:flex;align-items:center;justify-content:center;">${tool.icon}</span>`;
+        } else {
+            toolLogo.innerHTML = `<span style="font-size: 4rem;">${tool.icon}</span>`;
+        }
     }
 
     // Update category tag
@@ -1057,13 +1089,18 @@ function loadToolDetails(tool) {
     }
 }
 
-// Create Tool Card
+// Create Tool Card with Real Logos
 function createToolCard(tool) {
     const stars = '⭐'.repeat(Math.floor(tool.rating));
+    const logoHtml = tool.logoUrl 
+        ? `<img src="${tool.logoUrl}" alt="${tool.name}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+           <span class="tool-card-icon" style="display:none;">${tool.icon}</span>`
+        : `<span class="tool-card-icon">${tool.icon}</span>`;
+    
     return `
         <div class="tool-card" onclick="goToTool(${tool.id})">
             <div class="tool-card-image">
-                <span class="tool-card-icon">${tool.icon}</span>
+                ${logoHtml}
             </div>
             <div class="tool-card-content">
                 <span class="tool-card-category">${tool.categoryAr}</span>
