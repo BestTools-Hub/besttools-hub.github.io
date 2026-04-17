@@ -2,7 +2,7 @@
    BestTools - Main JavaScript
    ============================================ */
 
-// Tool Data - 25+ Tools with Complete Information
+// Tool Data - 28 Professional Tools
 const toolsData = [
     // === AI Writing Tools ===
     {
@@ -11,10 +11,10 @@ const toolsData = [
         nameEn: "ChatGPT",
         category: "ai-writing",
         categoryAr: "الكتابة بالذكاء الاصطناعي",
-        description: "أداة الذكاء الاصطناعي الأكثر تطوراً للمحادثة والنصوص. مساعدك الذكي للكتابة والبرمجة والإجابة على الأسئلة.",
-        longDescription: "ChatGPT هو نموذج ذكاء اصطناعي متقدم طورته OpenAI يستخدم تقنية المحادثة الطبيعية للتفاعل مع المستخدمين. يمكنه الإجابة على الأسئلة، كتابة المقالات، البرمجة، الترجمة، وأكثر بكثير. منذ إطلاقه في نوفمبر 2022، أصبح الأداة الأكثر استخداماً في العالم مع أكثر من 100 مليون مستخدم.",
-        pros: ["محادثات طبيعية وسلسة", "دعم أكثر من 50 لغة", "كتابة الأكواد البرمجية", "إنشاء المحتوى النصي", "دمج مع تطبيقات متعددة", "واجهة سهلة الاستخدام"],
-        cons: ["أحياناً يعطي معلومات غير دقيقة", "معرفة محدودة حتى 2023", "يتطلب اتصال بالإنترنت", "النسخة المجانية محدودة"],
+        description: "أداة الذكاء الاصطناعي الأكثر تطوراً للمحادثة والنصوص. مساعدك الذكي للكتابة والبرمجة.",
+        longDescription: "ChatGPT هو نموذج ذكاء اصطناعي متقدم طورته OpenAI يستخدم تقنية المحادثة الطبيعية. يمكنه الإجابة على الأسئلة، كتابة المقالات، البرمجة، الترجمة، وأكثر بكثير.",
+        pros: ["محادثات طبيعية وسلسة", "دعم أكثر من 50 لغة", "كتابة الأكواد البرمجية", "إنشاء المحتوى النصي", "دمج مع تطبيقات متعددة"],
+        cons: ["أحياناً يعطي معلومات غير دقيقة", "معرفة محدودة حتى 2023", "يتطلب اتصال بالإنترنت"],
         rating: 4.9,
         reviews: 12450,
         icon: "🤖",
@@ -27,8 +27,8 @@ const toolsData = [
         launchDate: "نوفمبر 2022",
         users: "+100 مليون",
         website: "chat.openai.com",
-        tags: ["AI", "Chatbot", "Writing", "Coding", "Productivity"],
-        alternatives: [3, 11, 5]
+        tags: ["AI", "Chatbot", "Writing"],
+        alternatives: [3, 11]
     },
     {
         id: 2,
@@ -36,10 +36,10 @@ const toolsData = [
         nameEn: "Claude",
         category: "ai-writing",
         categoryAr: "الكتابة بالذكاء الاصطناعي",
-        description: "مساعد الذكاء الاصطناعي الآمن من Anthropic. مساعد ذكي يركز على الأمان والمحادثة الطبيعية.",
-        longDescription: "Claude هو مساعد ذكاء اصطناعي طورته شركة Anthropic، معروف بأخلاقياته العالية في التعامل مع المحتوى. يتميز بقدرته على فهم السياق العميق وإنتاج نصوص إبداعية عالية الجودة. يدعم التعامل مع الملفات والوثائق الكبيرة.",
-        pros: ["أمان عالي في المحتوى", "فهم سياقي ممتاز", "يدعم الملفات والوثائق", "كتابة إبداعية ممتازة", "تفاعل طبيعي جداً", "تحليل النصوص الطويلة"],
-        cons: ["لا يدعم البرمجة بشكل كامل", "مجانية محدودة", "غير متوفر في كثير من الدول"],
+        description: "مساعد الذكاء الاصطناعي الآمن من Anthropic. يركز على الأمان والمحادثة الطبيعية.",
+        longDescription: "Claude طورته شركة Anthropic، معروف بأخلاقياته العالية. يتميز بقدرته على فهم السياق العميق وإنتاج نصوص إبداعية عالية الجودة.",
+        pros: ["أمان عالي في المحتوى", "فهم سياقي ممتاز", "يدعم الملفات والوثائق", "تحليل النصوص الطويلة"],
+        cons: ["لا يدعم البرمجة بشكل كامل", "غير متوفر في كثير من الدول"],
         rating: 4.8,
         reviews: 5200,
         icon: "🧠",
@@ -52,8 +52,8 @@ const toolsData = [
         launchDate: "مارس 2023",
         users: "+30 مليون",
         website: "claude.ai",
-        tags: ["AI", "Chatbot", "Writing", "Safe"],
-        alternatives: [1, 5, 6]
+        tags: ["AI", "Chatbot", "Writing"],
+        alternatives: [1, 5]
     },
     {
         id: 3,
@@ -61,24 +61,20 @@ const toolsData = [
         nameEn: "Jasper",
         category: "ai-writing",
         categoryAr: "الكتابة بالذكاء الاصطناعي",
-        description: "مساعد الذكاء الاصطناعي للكتابة التسويقية. أنشئ مقالات ومنشورات تسويقية وطويلة في دقائق.",
-        longDescription: "Jasper هو مساعد كتابة بالذكاء الاصطناعي مصمم خصيصاً للتسويق والمحتوى. يقدم أكثر من 50 قالباً كتابياً يساعدك في إنشاء محتوى تسويقي احترافي بسرعة. يدعم أكثر من 25 لغة ويتميز بميزة Boss Mode للكتابة الطويلة.",
-        pros: ["قوالب متعددة للتسويق", "يدعم 25+ لغة", "وضع Boss Mode للمحتوى الطويل", "تكامل مع Grammerly", "دعم SEO", "أدوات صياغة العناوين"],
-        cons: ["سعر مرتفع", "يتطلب تعلم القوالب", "جودة متفاوتة حسب الموضوع"],
+        description: "مساعد الذكاء الاصطناعي للكتابة التسويقية. أنشئ مقالات ومنشورات في دقائق.",
+        longDescription: "Jasper مصمم خصيصاً للتسويق. يقدم أكثر من 50 قالباً كتابياً. يدعم أكثر من 25 لغة مع Boss Mode للمحتوى الطويل.",
+        pros: ["قوالب متعددة للتسويق", "وضع Boss Mode", "يدعم 25+ لغة", "تكامل مع SEO"],
+        cons: ["سعر مرتفع", "يتطلب تعلم القوالب"],
         rating: 4.6,
         reviews: 7200,
         icon: "📝",
         logoUrl: "",
         affiliateLink: "https://jasper.ai",
         price: "$40/month",
-        featured: false,
-        topToday: false,
         developer: "Jasper AI",
         launchDate: "يناير 2021",
-        users: "+100 ألف",
-        website: "jasper.ai",
-        tags: ["AI", "Writing", "Marketing", "Content"],
-        alternatives: [5, 1, 6]
+        tags: ["AI", "Writing", "Marketing"],
+        alternatives: [5, 1]
     },
     {
         id: 4,
@@ -86,24 +82,20 @@ const toolsData = [
         nameEn: "Copy.ai",
         category: "ai-writing",
         categoryAr: "الكتابة بالذكاء الاصطناعي",
-        description: "أداة كتابة التسويق بالذكاء الاصطناعي. أنشئ إعلانات ومنشورات وسطور قوية بسرعة.",
-        longDescription: "Copy.ai هي أداة كتابة تسويقية مدعومة بالذكاء الاصطناعي. تقدم حلولاً سريعة للإعلانات ومنشورات التواصل الاجتماعي وصفحات المنتج. تتميز بواجهة بسيطة ومجانية حتى 2000 كلمة شهرياً.",
-        pros: ["واجهة بسيطة وسهلة", "مجانية حتى 2000 كلمة", "أدوات تسويقية متعددة", "أكثر من 90 أداة", "دعم اللغات المختلفة"],
-        cons: ["جودة أقل من المنافسين", "제한 في الأطوال", "إعلانات مزعجة"],
+        description: "أداة كتابة التسويق. أنشئ إعلانات ومنشورات بسرعة.",
+        longDescription: "Copy.ai تقدم حلولاً سريعة للإعلانات ومنشورات التواصل. واجهة بسيطة ومجانية حتى 2000 كلمة شهرياً.",
+        pros: ["واجهة بسيطة", "مجانية حتى 2000 كلمة", "أكثر من 90 أداة"],
+        cons: ["جودة أقل من المنافسين", "إعلانات مزعجة"],
         rating: 4.5,
         reviews: 5600,
         icon: "✍️",
         logoUrl: "",
         affiliateLink: "https://copy.ai",
         price: "مجاني - $49/month",
-        featured: false,
-        topToday: false,
         developer: "Copy AI",
         launchDate: "أبريل 2020",
-        users: "+2 مليون",
-        website: "copy.ai",
-        tags: ["AI", "Copywriting", "Marketing"],
-        alternatives: [3, 6, 1]
+        tags: ["AI", "Copywriting"],
+        alternatives: [3, 6]
     },
     {
         id: 5,
@@ -111,23 +103,20 @@ const toolsData = [
         nameEn: "Writesonic",
         category: "ai-writing",
         categoryAr: "الكتابة بالذكاء الاصطناعي",
-        description: "منصة كتابة شاملة بالذكاء الاصطناعي. أنشئ مقالات، منشورات، وإعلانات باحترافية.",
-        longDescription: "Writesonic هي منصة كتابة شاملة بالذكاء الاصطناعي. تتميز بأداة Article Writer التي تنشئ مقالات كاملة من عناوين فقط، وأداة Photo Generator المدعومة بـ GPT-4. تدعم أكثر من 24 لغة وتتكامل مع WordPress.",
-        pros: ["Article Writer للمقالات", "دعم GPT-4", "تكامل مع WordPress", "أدوات SEO مدمجة", "أكثر من 100 أداة"],
-        cons: ["تحد في جودة المقالات", "سرعة معالجة بطيئة", "واجهة معقدة"],
+        description: "منصة كتابة شاملة. أنشئ مقالات وإعلانات باحترافية.",
+        longDescription: "Writesonic تتميز بأداة Article Writer للمقالات الكاملة وأداة Photo Generator المدعومة بـ GPT-4.",
+        pros: ["Article Writer", "دعم GPT-4", "أدوات SEO", "تكامل WordPress"],
+        cons: ["جودة متفاوتة", "واجهة معقدة"],
         rating: 4.4,
         reviews: 3800,
         icon: "🖊️",
+        logoUrl: "",
         affiliateLink: "https://writesonic.com",
         price: "مجاني - $19/month",
-        featured: false,
-        topToday: false,
         developer: "Writesonic",
         launchDate: "مارس 2021",
-        users: "+50 ألف",
-        website: "writesonic.com",
-        tags: ["AI", "Writing", "SEO", "Content"],
-        alternatives: [3, 6, 1]
+        tags: ["AI", "Writing", "SEO"],
+        alternatives: [3, 6]
     },
 
     // === AI Image Tools ===
@@ -137,10 +126,10 @@ const toolsData = [
         nameEn: "Midjourney",
         category: "ai-image",
         categoryAr: "الصور بالذكاء الاصطناعي",
-        description: "أداة إنشاء الصور بالذكاء الاصطناعي. أنشئ صوراً مذهلة من أوصاف نصية بسيطة.",
-        longDescription: "Midjourney هي أداة إنشاء صور مدعومة بالذكاء الاصطناعي تعمل من خلال Discord. تتميز بجودة صور فنية استثنائية وإمكانيات إبداعية غير محدودة. تدعم أنماط متعددة من الواقع إلى الخيال.",
-        pros: ["جودة صور استثنائية", "أنماط فنية متنوعة", "دقة عالية", "مجتمع نشط", "تحديثات مستمرة"],
-        cons: ["يتطلب Discord", "منحنى تعلم كبير", "تكلفة شهرية"],
+        description: "أداة إنشاء الصور بالذكاء الاصطناعي. أنشئ صوراً مذهلة من أوصاف نصية.",
+        longDescription: "Midjourney تعمل من خلال Discord. تتميز بجودة فنية استثنائية وإمكانيات إبداعية غير محدودة.",
+        pros: ["جودة صور استثنائية", "أنماط فنية متنوعة", "مجتمع نشط"],
+        cons: ["يتطلب Discord", "منحنى تعلم كبير"],
         rating: 4.8,
         reviews: 8900,
         icon: "🎨",
@@ -152,9 +141,8 @@ const toolsData = [
         developer: "Midjourney",
         launchDate: "يوليو 2022",
         users: "+20 مليون",
-        website: "midjourney.com",
-        tags: ["AI", "Art", "Image Generation", "Design"],
-        alternatives: [7, 10, 8]
+        tags: ["AI", "Image", "Art"],
+        alternatives: [7, 10]
     },
     {
         id: 7,
@@ -163,23 +151,19 @@ const toolsData = [
         category: "ai-image",
         categoryAr: "الصور بالذكاء الاصطناعي",
         description: "منتج الصور بالذكاء الاصطناعي من OpenAI. أنشئ صوراً مذهلة من النصوص.",
-        longDescription: "DALL-E 3 هو أحدث إصدار من نظام إنشاء الصور من OpenAI. يتميز بفهم أفضل للسياق والدقة في تفاصيل الصور. متاح الآن مباشرة من ChatGPT Plus للمشتركين.",
-        pros: ["فهم سياقي ممتاز", "دقة في التفاصيل", "تكامل مع ChatGPT", "تحكم في النتيجة", "جودة عالية"],
-        cons: ["يتطلب اشتراك ChatGPT", "قيود على المحتوى", "محدودية في الاستخدام التجاري"],
+        longDescription: "DALL-E 3 أحدث إصدار من OpenAI. يتميز بفهم أفضل للسياق والدقة. متاح من ChatGPT Plus.",
+        pros: ["فهم سياقي ممتاز", "دقة في التفاصيل", "تكامل مع ChatGPT"],
+        cons: ["يتطلب اشتراك ChatGPT", "قيود على المحتوى"],
         rating: 4.7,
         reviews: 6800,
         icon: "🖼️",
         logoUrl: "",
         affiliateLink: "https://openai.com/dall-e-3",
-        price: "$20/month (ChatGPT Plus)",
-        featured: true,
-        topToday: false,
+        price: "$20/month",
         developer: "OpenAI",
         launchDate: "أكتوبر 2023",
-        users: "+15 مليون",
-        website: "openai.com/dall-e-3",
-        tags: ["AI", "Image", "Generation", "OpenAI"],
-        alternatives: [6, 10, 8]
+        tags: ["AI", "Image", "OpenAI"],
+        alternatives: [6, 10]
     },
     {
         id: 8,
@@ -187,24 +171,20 @@ const toolsData = [
         nameEn: "Adobe Firefly",
         category: "ai-image",
         categoryAr: "الصور بالذكاء الاصطناعي",
-        description: "أداة إنشاء الصور من Adobe. أنشئ صوراً مذهلة بنماذج مختلفة من النصوص.",
-        longDescription: "Adobe Firefly هو نموذج إنشاء الصور من Adobe مع التركيز على الاستخدام التجاري الآمن. يتميز بقدرات متقدمة في التوسيع وإعادة الرسم، ويتكامل مع برنامج Photoshop.",
-        pros: ["آمن للاستخدام التجاري", "تكامل مع Adobe", "إعادة الرسم والتوسيع", "جودة احترافية", "تحكم متقدم"],
-        cons: ["محدودية في الأنماط", "يتطلب اشتراك Adobe", "بطيء نسبياً"],
+        description: "أداة إنشاء الصور من Adobe. أنشئ صوراً مذهلة بنماذج مختلفة.",
+        longDescription: "Adobe Firefly مع التركيز على الاستخدام التجاري الآمن. يتكامل مع Photoshop.",
+        pros: ["آمن للاستخدام التجاري", "تكامل مع Adobe", "إعادة الرسم"],
+        cons: ["يتطلب اشتراك Adobe", "بطيء نسبياً"],
         rating: 4.7,
         reviews: 4800,
         icon: "🔥",
         logoUrl: "",
         affiliateLink: "https://firefly.adobe.com",
         price: "$4.99/month",
-        featured: false,
-        topToday: false,
         developer: "Adobe",
         launchDate: "مارس 2023",
-        users: "+10 مليون",
-        website: "firefly.adobe.com",
-        tags: ["AI", "Image", "Adobe", "Design"],
-        alternatives: [6, 7, 10]
+        tags: ["AI", "Image", "Adobe"],
+        alternatives: [6, 7]
     },
     {
         id: 9,
@@ -212,24 +192,20 @@ const toolsData = [
         nameEn: "Stable Diffusion",
         category: "ai-image",
         categoryAr: "الصور بالذكاء الاصطناعي",
-        description: "أداة إنشاء صور مفتوحة المصدر. أنشئ صوراً مجانية على جهازك الشخصي.",
-        longDescription: "Stable Diffusion هو نموذج مفتوح المصدر لإنشاء الصور يعمل محلياً على جهازك. يتميز بأنه مجاني تماماً ويوفر تحكماً كاملاً في العملية. يمكن تثبيته محلياً أو استخدام خدمات سحابية.",
-        pros: ["مجانٍ ومفتوح المصدر", "يعمل محلياً", "تحكم كامل", "مجتمع كبير", "تكاملات متعددة"],
-        cons: ["يتطلب جهاز قوي", "منحنى تعلم", "جودة متفاوتة"],
+        description: "أداة إنشاء صور مفتوحة المصدر. أنشئ صوراً مجانية على جهازك.",
+        longDescription: "Stable Diffusion نموذج مفتوح المصدر يعمل محلياً على جهازك. مجاني تماماً.",
+        pros: ["مجانٍ ومفتوح المصدر", "يعمل محلياً", "تحكم كامل"],
+        cons: ["يتطلب جهاز قوي", "منحنى تعلم"],
         rating: 4.6,
         reviews: 9200,
         icon: "🎭",
         logoUrl: "",
         affiliateLink: "https://stability.ai",
-        price: "مجاني (محلياً)",
-        featured: false,
-        topToday: false,
+        price: "مجاني",
         developer: "Stability AI",
         launchDate: "أغسطس 2022",
-        users: "+25 مليون",
-        website: "stability.ai",
-        tags: ["AI", "Image", "Open Source", "Free"],
-        alternatives: [6, 7, 10]
+        tags: ["AI", "Image", "Open Source"],
+        alternatives: [6, 7]
     },
     {
         id: 10,
@@ -237,24 +213,20 @@ const toolsData = [
         nameEn: "Leonardo.ai",
         category: "ai-image",
         categoryAr: "الصور بالذكاء الاصطناعي",
-        description: "منصة إنشاء صور احترافية. أدوات متقدمة لصنع وتحسين الصور بالذكاء الاصطناعي.",
-        longDescription: "Leonardo.ai هي منصة شاملة لإنشاء الصور بالذكاء الاصطناعي. تقدم أدوات متقدمة للتحكم في النمط والمحتوى، مع واجهة مستخدم سهلة الاستخدام. تدعم إنشاء الفيديو أيضاً.",
-        pros: ["أدوات تحكم متقدمة", "مجانية تتضمن رصيد", "إنشاء الفيديو", "قوالب جاهزة", "مجتمع نشط"],
-        cons: ["رصيد محدود مجاناً", "رسوم لاحقة", "تعلم الأدوات"],
+        description: "منصة إنشاء صور احترافية. أدوات متقدمة لصنع الصور بالذكاء الاصطناعي.",
+        longDescription: "Leonardo.ai منصة شاملة تقدم أدوات تحكم متقدمة. تدعم إنشاء الفيديو أيضاً.",
+        pros: ["أدوات تحكم متقدمة", "مجانية برصيد", "إنشاء الفيديو"],
+        cons: ["رصيد محدود مجاناً"],
         rating: 4.6,
         reviews: 5200,
         icon: "🎪",
         logoUrl: "",
         affiliateLink: "https://leonardo.ai",
         price: "مجاني - $30/month",
-        featured: false,
-        topToday: false,
         developer: "Leonardo",
         launchDate: "ديسمبر 2022",
-        users: "+8 ملايين",
-        website: "leonardo.ai",
-        tags: ["AI", "Image", "Video", "Creative"],
-        alternatives: [6, 7, 9]
+        tags: ["AI", "Image", "Video"],
+        alternatives: [6, 7]
     },
 
     // === Design Tools ===
@@ -264,10 +236,9 @@ const toolsData = [
         nameEn: "Canva",
         category: "design",
         categoryAr: "التصميم",
-        description: "أداة تصميم سهلة الاستخدام. صمم منشورات سوشيال ميديا وشعارات وعروض تقديمية بدون خبرة.",
-        longDescription: "Canva هي أداة تصميم سهلة الاستخدام تتيح لأي شخص إنشاء تصاميم احترافية. تقدم مكتبة ضخمة من القوالب والتصاميم الجاهزة. مثالية لغير المتخصصين في التصميم.",
-        pros: ["واجهة سهلة جداً", "مكتبة ضخمة من القوالب", "مجاني مع ميزات جيدة", "تصدير متعدد الصيغ", "عمل جماعي"],
-        cons: ["ميزات محدودة في المجاني", "أداة أساسية للاحتراف", "بطيئة مع تصاميم كبيرة"],
+        description: "أداة تصميم سهلة الاستخدام. صمم منشورات وشعارات بدون خبرة.",
+        longDescription: "Canva أداة تصميم سهلة لأي شخص. مكتبة ضخمة من القوالب. مثالية لغير المتخصصين.",
+        pros: ["واجهة سهلة جداً", "مكتبة قوالب ضخمة", "مجاني مع ميزات جيدة"],
         rating: 4.7,
         reviews: 15200,
         icon: "🎨",
@@ -279,9 +250,8 @@ const toolsData = [
         developer: "Canva",
         launchDate: "2012",
         users: "+100 مليون",
-        website: "canva.com",
-        tags: ["Design", "Social Media", "Presentation", "Easy"],
-        alternatives: [12, 8]
+        tags: ["Design", "Easy"],
+        alternatives: [12]
     },
     {
         id: 12,
@@ -289,10 +259,10 @@ const toolsData = [
         nameEn: "Figma",
         category: "design",
         categoryAr: "التصميم",
-        description: "أداة تصميم واجهة المستخدم التعاونية. صمم تطبيقات ومواقع مع فريقك في الوقت الفعلي.",
-        longDescription: "Figma هي أداة تصميم واجهات المستخدم الأولى للمصممين المحترفين. تعمل بالكامل في المتصفح وتدعم التعاون الحقيقي بين أعضاء الفريق. مثالية لتصميم التطبيقات والمواقع.",
-        pros: ["تعاون في الوقت الفعلي", "يعمل في المتصفح", "أدوات تصميم متقدمة", "Prototyping مدمج", "مجتمع كبير"],
-        cons: ["يتطلب اتصال بالإنترنت", "منحنى تعلم", "غالي لل فرق"],
+        description: "أداة تصميم واجهة المستخدم التعاونية. صمم مع فريقك في الوقت الفعلي.",
+        longDescription: "Figma أولى للمصممين المحترفين. تعمل في المتصفح وتدعم التعاون الحقيقي.",
+        pros: ["تعاون في الوقت الفعلي", "أدوات متقدمة", "Prototyping مدمج"],
+        cons: ["يتطلب إنترنت", "غالي للفرق"],
         rating: 4.9,
         reviews: 11500,
         icon: "🎯",
@@ -303,10 +273,8 @@ const toolsData = [
         topToday: false,
         developer: "Figma",
         launchDate: "2016",
-        users: "+4 ملايين",
-        website: "figma.com",
-        tags: ["Design", "UI/UX", "Collaboration", "Prototyping"],
-        alternatives: [11, 13]
+        tags: ["Design", "UI/UX"],
+        alternatives: [11]
     },
     {
         id: 13,
@@ -314,24 +282,20 @@ const toolsData = [
         nameEn: "Adobe Photoshop",
         category: "design",
         categoryAr: "التصميم",
-        description: "البرنامج الأشهر لتحرير الصور. معيار صناعي لتعديل الصور والجرافيك.",
-        longDescription: "Adobe Photoshop هو المعيار الصناعي لتحرير الصور والجرافيك. يقدم أدوات قوية لتعديل الصور، إنشاء التصاميم، والطباعة._supported by a huge community of plugins.",
-        pros: ["أدوات قوية جداً", "معايير الصناعة", "دعم كبير", "تكامل مع Adobe", "شعبية واسعة"],
-        cons: ["سعر مرتفع جداً", "منحنى تعلم كبير", "يتطلب جهاز قوي"],
+        description: "البرنامج الأشهر لتحرير الصور. معيار صناعي لتعديل الصور.",
+        longDescription: "Adobe Photoshop المعيار الصناعي لتحرير الصور. أدوات قوية وPlugins كثيرة.",
+        pros: ["أدوات قوية جداً", "معايير الصناعة", "دعم كبير"],
+        cons: ["سعر مرتفع", "منحنى تعلم كبير"],
         rating: 4.9,
         reviews: 25000,
         icon: "📸",
         logoUrl: "",
         affiliateLink: "https://adobe.com/photoshop",
         price: "$22.99/month",
-        featured: false,
-        topToday: false,
         developer: "Adobe",
         launchDate: "1990",
-        users: "+50 مليون",
-        website: "adobe.com/photoshop",
-        tags: ["Design", "Photo Editing", "Graphics", "Professional"],
-        alternatives: [11, 14]
+        tags: ["Design", "Photo Editing"],
+        alternatives: [14]
     },
     {
         id: 14,
@@ -339,24 +303,20 @@ const toolsData = [
         nameEn: "Photopea",
         category: "design",
         categoryAr: "التصميم",
-        description: "بديل مجاني للمتصفح Photoshope. محرر صور احترافي يعمل بالكامل في المتصفح.",
-        longDescription: "Photopea هو محرر صور مجاني يعمل بالكامل في المتصفح. يدعم صيغ PSD و AI و Sketch ويقدم أدوات مشابهة لـ Photoshop. مثالي لمن يريد Photoshop مجاناً.",
-        pros: ["مجانٍ تماماً", "يعمل في المتصفح", "يدعم صيغ Adobe", "بديل قريب من PS", "لا يتطلب تثبيت"],
-        cons: ["أقل من Photoshop", "بطيء مع ملفات كبيرة", "لا يعمل بدون إنترنت"],
+        description: "بديل مجاني للمتصفح Photoshop. محرر صور يعمل بالكامل في المتصفح.",
+        longDescription: "Photopea بديل مجاني وقريب من Photoshop. يدعم صيغ PSD و AI.",
+        pros: ["مجانٍ تماماً", "يدعم صيغ Adobe", "بديل قريب من PS"],
+        cons: ["أقل من Photoshop", "لا يعمل بدون إنترنت"],
         rating: 4.5,
         reviews: 8500,
         icon: "🖌️",
         logoUrl: "",
         affiliateLink: "https://photopea.com",
         price: "مجاني",
-        featured: false,
-        topToday: false,
         developer: "Photopea",
         launchDate: "2013",
-        users: "+5 ملايين",
-        website: "photopea.com",
-        tags: ["Design", "Photo Editing", "Free", "Browser"],
-        alternatives: [13, 11]
+        tags: ["Design", "Free"],
+        alternatives: [13]
     },
 
     // === Productivity Tools ===
@@ -366,10 +326,10 @@ const toolsData = [
         nameEn: "Notion",
         category: "productivity",
         categoryAr: "الإنتاجية",
-        description: "منصة إدارة المشاريع والملاحظات. اجمع كل أفكارك ومشاريعك في مكان واحد.",
-        longDescription: "Notion هي منصة شاملة لإدارة العمل والحياة. تجمع بين الملاحظات والمشاريع وقواعد البيانات والويكي والمزيد. قابلة للتخصيص بالكامل لتناسب احتياجاتك.",
-        pros: ["مرونة عالية", "قوالب متعددة", "عمل جماعي", "تطبيقات متعددة", "تكاملات"],
-        cons: ["منحنى تعلم", "بطيء أحياناً", "غير مجاني للفرق"],
+        description: "منصة إدارة المشاريع والملاحظات. اجمع أفكارك في مكان واحد.",
+        longDescription: "Notion منصة شاملة تجمع بين الملاحظات والمشاريع وقواعد البيانات. قابلة للتخصيص بالكامل.",
+        pros: ["مرونة عالية", "قوالب متعددة", "تكاملات"],
+        cons: ["منحنى تعلم", "بطيء أحياناً"],
         rating: 4.8,
         reviews: 9800,
         icon: "📝",
@@ -381,9 +341,8 @@ const toolsData = [
         developer: "Notion Labs",
         launchDate: "2013",
         users: "+30 مليون",
-        website: "notion.so",
-        tags: ["Productivity", "Notes", "Project", "All-in-one"],
-        alternatives: [16, 17, 18]
+        tags: ["Productivity", "Notes"],
+        alternatives: [16, 17]
     },
     {
         id: 16,
@@ -391,24 +350,20 @@ const toolsData = [
         nameEn: "Trello",
         category: "productivity",
         categoryAr: "الإنتاجية",
-        description: "أداة إدارة المهام البصرية. نظّم مشاريعك بطريقة بسيطة ومؤثرة.",
-        longDescription: "Trello هي أداة إدارة مشاريع بسيطة وفعالة تستخدم نظام Kanban. مثالية للفرق الصغيرة والأفراد الذين يريدون تنظيم المهام بصرياً.",
-        pros: ["بسيطة وسهلة", "نظام Kanban", "مجانية جيدة", "تطبيقات متعددة", "Power-Ups"],
-        cons: ["محدودة للمشاريع الكبيرة", "لا توجد ميزات متقدمة", "إعلانات في المجاني"],
+        description: "أداة إدارة المهام البصرية. نظّم مشاريعك بطريقة بسيطة.",
+        longDescription: "Trello تستخدم نظام Kanban. مثالية للفرق الصغيرة والأفراد.",
+        pros: ["بسيطة", "نظام Kanban", "مجانية جيدة"],
         rating: 4.6,
         reviews: 12500,
         icon: "📋",
         logoUrl: "",
         affiliateLink: "https://trello.com",
         price: "مجاني - $17.50/month",
-        featured: false,
-        topToday: false,
         developer: "Atlassian",
         launchDate: "2011",
         users: "+50 مليون",
-        website: "trello.com",
-        tags: ["Productivity", "Project Management", "Kanban"],
-        alternatives: [15, 17]
+        tags: ["Productivity", "Kanban"],
+        alternatives: [15]
     },
     {
         id: 17,
@@ -416,24 +371,20 @@ const toolsData = [
         nameEn: "Asana",
         category: "productivity",
         categoryAr: "الإنتاجية",
-        description: "منصة إدارة العمل الشاملة. نظّم أهدافك ومهامك وفريقك في مكان واحد.",
-        longDescription: "Asana هي منصة متقدمة لإدارة العمل للفرق والمؤسسات. تقدم تتبعاً شاملاً للمشاريع والأهداف مع تقارير مفصلة.",
-        pros: ["ميزات متقدمة", "تقارير وتحليلات", "أتمتة workflows", "تكاملات كثيرة", "دعم كبير"],
-        cons: ["سعر مرتفع", "معقد للمبتدئين", "إعدادات معقدة"],
+        description: "منصة إدارة العمل الشاملة. نظّم أهدافك وفريقك في مكان واحد.",
+        longDescription: "Asana منصة متقدمة للفرق والمؤسسات. تقدم تتبعاً شاملاً مع تقارير مفصلة.",
+        pros: ["ميزات متقدمة", "تقارير", "أتمتة workflows"],
+        cons: ["سعر مرتفع", "معقد للمبتدئين"],
         rating: 4.5,
         reviews: 8800,
         icon: "✅",
         logoUrl: "",
         affiliateLink: "https://asana.com",
         price: "مجاني - $24.99/month",
-        featured: false,
-        topToday: false,
         developer: "Asana",
         launchDate: "2008",
-        users: "+20 مليون",
-        website: "asana.com",
-        tags: ["Productivity", "Project Management", "Team"],
-        alternatives: [15, 16, 18]
+        tags: ["Productivity", "Team"],
+        alternatives: [15, 16]
     },
     {
         id: 18,
@@ -442,23 +393,20 @@ const toolsData = [
         category: "productivity",
         categoryAr: "الإنتاجية",
         description: "مدير المهام الشخصي. نظّم حياتك ومهامك بذكاء.",
-        longDescription: "Todoist هو مدير مهام بسيط وفعال للتنفيذ الفردي والفرق. يتميز بواجهة نظيفة وميزات قوية مثل المشاريع الفرعية والعلامات والتذكيرات.",
-        pros: ["واجهة نظيفة", "ميزات قوية", "تطبيقات متعددة", "تكلفة منخفضة", "مزامنة ممتازة"],
-        cons: ["غير مناسب للفرق الكبيرة", "ميزات محدودة في المجاني", "لا يدعم Kanban"],
+        longDescription: "Todoist مدير مهام بسيط وفعال. واجهة نظيفة وميزات مثل المشاريع الفرعية.",
+        pros: ["واجهة نظيفة", "مزامنة ممتازة", "تكلفة منخفضة"],
+        cons: ["لا يدعم Kanban", "محدود في المجاني"],
         rating: 4.7,
         reviews: 11000,
         icon: "☑️",
         logoUrl: "",
         affiliateLink: "https://todoist.com",
         price: "مجاني - $5/month",
-        featured: false,
-        topToday: false,
         developer: "Doist",
         launchDate: "2007",
         users: "+25 مليون",
-        website: "todoist.com",
-        tags: ["Productivity", "Task Manager", "Personal"],
-        alternatives: [15, 16]
+        tags: ["Productivity", "Tasks"],
+        alternatives: [15]
     },
 
     // === Developer Tools ===
@@ -468,24 +416,21 @@ const toolsData = [
         nameEn: "GitHub Copilot",
         category: "development",
         categoryAr: "التطوير",
-        description: "مساعد البرمجة بالذكاء الاصطناعي. اكتب أكواداً أسرع مع إكمال تلقائي ذكي.",
-        longDescription: "GitHub Copilot هو مساعد برمجة بالذكاء الاصطناعي من Microsoft و OpenAI. يقترح أكواداً كاملة بناءً على السياق والتعليقات. يدعم أكثر من لغة برمجة.",
-        pros: ["اقتراحات ذكية", "يدعم many لغات", "يتعلم من الكود", "أكواد متكررة", "دعم IDEs"],
-        cons: ["يتطلب اشتراك", "اقتراحات غير دقيقة", "مشاكل الترخيص"],
+        description: "مساعد البرمجة بالذكاء الاصطناعي. اكتب أكواداً أسرع مع إكمال تلقائي.",
+        longDescription: "GitHub Copilot من Microsoft و OpenAI. يقترح أكواداً كاملة بناءً على السياق.",
+        pros: ["اقتراحات ذكية", "يدعم many لغات", "يدعم IDEs"],
+        cons: ["يتطلب اشتراك", "مشاكل الترخيص"],
         rating: 4.8,
         reviews: 8900,
         icon: "💻",
         logoUrl: "",
         affiliateLink: "https://github.com/features/copilot",
         price: "$10/month",
-        featured: false,
-        topToday: false,
         developer: "Microsoft",
         launchDate: "يونيو 2021",
         users: "+2 مليون",
-        website: "github.com/features/copilot",
-        tags: ["Development", "AI", "Coding", "Productivity"],
-        alternatives: [20, 21]
+        tags: ["Development", "AI"],
+        alternatives: [20]
     },
     {
         id: 20,
@@ -493,24 +438,20 @@ const toolsData = [
         nameEn: "Cursor",
         category: "development",
         categoryAr: "التطوير",
-        description: "محرر كود مدعوم بالذكاء الاصطناعي. IDE جديد يعتمد على AI للمطورين.",
-        longDescription: "Cursor هو IDE جديد مبني على VS Code مع تكامل عميق للذكاء الاصطناعي. يقدم ميزات مثل محادثة AI داخل المحرر، إكمال ذكي، وإعادة البناء التلقائي.",
-        pros: ["تكامل AI متقدم", "يعمل على VS Code", "محادثة مدمجة", "إصلاح الأخطاء", "مجاني للمستخدمين"],
-        cons: ["جديد نسبياً", "بعض الميزات تجريبية", "موارد عالية"],
+        description: "محرر كود مدعوم بالذكاء الاصطناعي. IDE جديد يعتمد على AI.",
+        longDescription: "Cursor مبني على VS Code مع تكامل عميق للذكاء الاصطناعي. محادثة مدمجة وإكمال ذكي.",
+        pros: ["تكامل AI متقدم", "محادثة مدمجة", "مجاني للمستخدمين"],
+        cons: ["جديد نسبياً", "موارد عالية"],
         rating: 4.7,
         reviews: 4200,
         icon: "📑",
         logoUrl: "",
         affiliateLink: "https://cursor.sh",
         price: "مجاني - $20/month",
-        featured: false,
-        topToday: false,
         developer: "Anysphere",
         launchDate: "2023",
-        users: "+500 ألف",
-        website: "cursor.sh",
-        tags: ["Development", "IDE", "AI", "VS Code"],
-        alternatives: [19, 21]
+        tags: ["Development", "IDE"],
+        alternatives: [19]
     },
     {
         id: 21,
@@ -518,23 +459,20 @@ const toolsData = [
         nameEn: "Replit AI",
         category: "development",
         categoryAr: "التطوير",
-        description: "بيئة تطوير سحابية مدعومة بالذكاء الاصطناعي. اكتب، شغّل، ومشاركة الكود.",
-        longDescription: "Replit هي بيئة تطوير سحابية مع ميزات AI مدمجة. تدعم أكثر من 50 لغة وتتيح التعاون في الوقت الفعلي. مثالي للمبتدئين والتعلم.",
-        pros: ["لا يتطلب إعداد", "支持多个语言", "Collaboration", "Hosting مدمج", "AI مدمج"],
-        cons: ["أداء محدود", "مجانية محدودة", "الخصوصية"],
+        description: "بيئة تطوير سحابية مدعومة بالذكاء الاصطناعي.",
+        longDescription: "Replit بيئة تطوير سحابية. تدعم أكثر من 50 لغة والتعاون في الوقت الفعلي.",
+        pros: ["لا يتطلب إعداد", "Support multiple languages", "Hosting مدمج"],
+        cons: ["أداء محدود", "خصوصية"],
         rating: 4.5,
         reviews: 6500,
         icon: "⚡",
         logoUrl: "",
         affiliateLink: "https://replit.com",
         price: "مجاني - $20/month",
-        featured: false,
-        topToday: false,
         developer: "Replit",
         launchDate: "2018",
         users: "+20 مليون",
-        website: "replit.com",
-        tags: ["Development", "Cloud IDE", "AI", "Learning"],
+        tags: ["Development", "Cloud IDE"],
         alternatives: [19, 20]
     },
 
@@ -545,24 +483,20 @@ const toolsData = [
         nameEn: "Grammarly",
         category: "marketing",
         categoryAr: "التسويق",
-        description: "مساعد الكتابة الذكية. صحح الأخطاء الإملاقية والنحوية وتحسين أسلوبك.",
-        longDescription: "Grammarly هو مساعد كتابة مدعوم بالذكاء الاصطناعي. يكتشف الأخطاء الإملاقية والنحوية ويقترح تحسينات على الأسلوب والنبرة. متاح كإضافة للمتصفح وتطبيق.",
-        pros: ["دقة عالية", "فحص شامل", "تطبيقات متعددة", "اقتراحات ذكية", "مجانية جيدة"],
-        cons: ["اشتراك للميزات المتقدمة", "خصوصية البيانات", "أحياناً اقتراحات خاطئة"],
+        description: "مساعد الكتابة الذكية. صحح الأخطاء الإملائية والنحوية.",
+        longDescription: "Grammarly يكتشف الأخطاء ويقترح تحسينات على الأسلوب والنبرة. متاح كإضافة للمتصفح.",
+        pros: ["دقة عالية", "فحص شامل", "مجانية جيدة"],
         rating: 4.7,
         reviews: 18500,
         icon: "✏️",
         logoUrl: "",
         affiliateLink: "https://grammarly.com",
         price: "مجاني - $30/month",
-        featured: false,
-        topToday: false,
         developer: "Grammarly",
         launchDate: "2009",
         users: "+50 مليون",
-        website: "grammarly.com",
-        tags: ["Writing", "Grammar", "Marketing", "Productivity"],
-        alternatives: [1, 15]
+        tags: ["Writing", "Marketing"],
+        alternatives: [1]
     },
     {
         id: 23,
@@ -570,23 +504,19 @@ const toolsData = [
         nameEn: "SurferSEO",
         category: "marketing",
         categoryAr: "التسويق",
-        description: "أداة تحسين محركات البحث. حلّل المحتوى واحصل على توصيات لتحسين ترتيبك.",
-        longDescription: "SurferSEO هي أداة شاملة لـ SEO_content. تحلل المحتوى الخاص بك وتقدم توصيات مفصلة لتحسين الترتيب في محركات البحث. تشمل أداة كاتب المحتوى المدعوم بـ AI.",
-        pros: ["تحليل شامل", "اقتراحات عملية", "كاتب SEO مدمج", "تنافس البيانات", "أدوات بحث"],
-        cons: ["سعر مرتفع", "منحنى تعلم", "غير مناسب للمبتدئين"],
+        description: "أداة تحسين محركات البحث. حلّل المحتوى واحصل على توصيات.",
+        longDescription: "SurferSEO تحلل المحتوى وتقدم توصيات مفصلة لتحسين الترتيب. تشمل كاتب SEO.",
+        pros: ["تحليل شامل", "كاتب SEO مدمج", "تنافس البيانات"],
+        cons: ["سعر مرتفع", "منحنى تعلم"],
         rating: 4.6,
         reviews: 4200,
         icon: "📈",
         logoUrl: "",
         affiliateLink: "https://surferseo.com",
         price: "$99/month",
-        featured: false,
-        topToday: false,
         developer: "Surfer",
         launchDate: "2017",
-        users: "+100 ألف",
-        website: "surferseo.com",
-        tags: ["SEO", "Marketing", "Content", "Analytics"],
+        tags: ["SEO", "Marketing"],
         alternatives: [24, 25]
     },
     {
@@ -595,23 +525,20 @@ const toolsData = [
         nameEn: "Ahrefs",
         category: "marketing",
         categoryAr: "التسويق",
-        description: "أداة شاملة للـ SEO. أدوات بحث عن الكلمات المفتاحية وتحليل المنافسين.",
-        longDescription: "Ahrefs هي أداة SEO شاملة تقدم حلولاً للبحث عن الكلمات المفتاحية، تحليل الروابط الخلفية، ومراقبة المنافسين. تُعتبر من أقوى أدوات SEO في السوق.",
-        pros: ["قاعدة بيانات ضخمة", "أدوات متقدمة", "تحليل المنافسين", "Site Audit", "أكاديمي كبير"],
-        cons: ["سعر مرتفع جداً", "منحنى تعلم", "لا يدعم العربية"],
+        description: "أداة شاملة للـ SEO. أدوات بحث عن الكلمات المفتاحية.",
+        longDescription: "Ahrefs من أقوى أدوات SEO. تقدم البحث عن الكلمات، تحليل الروابط، Site Audit.",
+        pros: ["قاعدة بيانات ضخمة", "تحليل المنافسين", "Site Audit"],
+        cons: ["سعر مرتفع جداً", "لا يدعم العربية"],
         rating: 4.8,
         reviews: 9500,
         icon: "🔍",
         logoUrl: "",
         affiliateLink: "https://ahrefs.com",
         price: "$99/month",
-        featured: false,
-        topToday: false,
         developer: "Ahrefs",
         launchDate: "2010",
         users: "+7 ملايين",
-        website: "ahrefs.com",
-        tags: ["SEO", "Marketing", "Backlinks", "Research"],
+        tags: ["SEO", "Research"],
         alternatives: [23, 25]
     },
     {
@@ -621,22 +548,19 @@ const toolsData = [
         category: "marketing",
         categoryAr: "التسويق",
         description: "منصة تسويق شاملة. SEO، PPC، Social Media، والمزيد.",
-        longDescription: "SEMrush هي منصة تسويق رقمي شاملة تجمع بين أدوات SEO، PPC، Social Media، والمحتوى. تقدم رؤية شاملة لأدائك التسويقي.",
-        pros: ["منصة شاملة", "أدوات متعددة", "تقارير متقدمة", "Brand Monitoring", "POSitions tracking"],
-        cons: ["سعر مرتفع جداً", "معقد للمبتدئين", "واجهة مزدحمة"],
+        longDescription: "SEMrush منصة تسويق رقمي شاملة. تجمع بين أدوات SEO وPPC وSocial Media.",
+        pros: ["منصة شاملة", "تقارير متقدمة", "Brand Monitoring"],
+        cons: ["سعر مرتفع", "واجهة مزدحمة"],
         rating: 4.7,
         reviews: 10500,
         icon: "📊",
         logoUrl: "",
         affiliateLink: "https://semrush.com",
         price: "$119.95/month",
-        featured: false,
-        topToday: false,
         developer: "SEMrush",
         launchDate: "2008",
         users: "+10 ملايين",
-        website: "semrush.com",
-        tags: ["SEO", "Marketing", "PPC", "All-in-one"],
+        tags: ["SEO", "Marketing", "PPC"],
         alternatives: [23, 24]
     },
 
@@ -647,23 +571,20 @@ const toolsData = [
         nameEn: "Runway",
         category: "ai-video",
         categoryAr: "الفيديو بالذكاء الاصطناعي",
-        description: "أدوات فيديو مدعومة بالذكاء الاصطناعي. أنشئ وحرر الفيديو بالتقنيات الحديثة.",
-        longDescription: "Runway هي منصة متقدمة لتحرير الفيديو بالذكاء الاصطناعي. تقدم أدوات لتوليد الفيديو، إزالة الخلفية،翻译، والمزيد. تقنية Gen-2 تتيح إنشاء فيديو من النص.",
-        pros: ["إنشاء فيديو من نص", "أدوات متقدمة", "تجربة مجانية", "مستمر التطوير", "دعم المجتمع"],
-        cons: ["جودة متفاوتة", "مجانية محدودة", "منحنى تعلم"],
+        description: "أدوات فيديو مدعومة بالذكاء الاصطناعي. أنشئ وحرر الفيديو.",
+        longDescription: "Runway منصة متقدمة لتحرير الفيديو بالذكاء الاصطناعي. تقنية Gen-2 لإنشاء فيديو من نص.",
+        pros: ["إنشاء فيديو من نص", "أدوات متقدمة", "تجربة مجانية"],
+        cons: ["جودة متفاوتة", "منحنى تعلم"],
         rating: 4.5,
         reviews: 3200,
         icon: "🎬",
         logoUrl: "",
         affiliateLink: "https://runwayml.com",
         price: "مجاني - $35/month",
-        featured: false,
-        topToday: false,
         developer: "Runway",
         launchDate: "2018",
         users: "+3 ملايين",
-        website: "runwayml.com",
-        tags: ["AI", "Video", "Editing", "Generation"],
+        tags: ["AI", "Video", "Editing"],
         alternatives: [27, 28]
     },
     {
@@ -672,23 +593,20 @@ const toolsData = [
         nameEn: "Synthesia",
         category: "ai-video",
         categoryAr: "الفيديو بالذكاء الاصطناعي",
-        description: "أنشئ فيديوهات احترافية بالذكاء الاصطناعي. مضيفون رقميون يتحدثون لغات متعددة.",
-        longDescription: "Synthesia هي منصة لإنشاء فيديو بالذكاء الاصطناعي. تتيح إنشاء فيديوهات مع مضيفين رقميين يتحدثون أكثر من 120 لغة. مثالية للتدريب والتسويق.",
-        pros: ["120+ لغة", "مضيفون رقميون", "سهل الاستخدام", "تطبيقات مؤسسية", "تجربة مجانية"],
-        cons: ["غالي", "مضيفون محدودون", "قيود إبداعية"],
+        description: "أنشئ فيديوهات احترافية بالذكاء الاصطناعي. مضيفون رقميون بلغات متعددة.",
+        longDescription: "Synthesia منصة لإنشاء فيديو بالذكاء الاصطناعي. مضيفون رقميون يتحدثون أكثر من 120 لغة.",
+        pros: ["120+ لغة", "مضيفون رقميون", "سهل الاستخدام"],
+        cons: ["غالي", "مضيفون محدودون"],
         rating: 4.6,
         reviews: 4800,
         icon: "🎥",
         logoUrl: "",
         affiliateLink: "https://synthesia.io",
         price: "$30/month",
-        featured: false,
-        topToday: false,
         developer: "Synthesia",
         launchDate: "2017",
         users: "+1 مليون",
-        website: "synthesia.io",
-        tags: ["AI", "Video", "Avatars", "Training"],
+        tags: ["AI", "Video", "Avatars"],
         alternatives: [26, 28]
     },
     {
@@ -697,23 +615,20 @@ const toolsData = [
         nameEn: "Descript",
         category: "ai-video",
         categoryAr: "الفيديو بالذكاء الاصطناعي",
-        description: "محرر فيديو بسيط بالذكاء الاصطناعي. أنشئ وحرر Podcast والفيديو بسهولة.",
-        longDescription: "Descript هو محرر فيديو وبودكاست جديد يعتمد على النص. يمكنك تحرير الفيديو بالنص كما لو كنت تحرر مستند. يشمل Overdub لتعديل الصوت AI.",
-        pros: ["تحرير بالنص", "Overdub مذهل", "Transcription مجاني", "Simple interface", "Podcast tools"],
-        cons: ["غير كامل للمحررين", "مشكلة الترحيل", "محدود للفيديو"],
+        description: "محرر فيديو بسيط بالذكاء الاصطناعي. أنشئ وحرر Podcast والفيديو.",
+        longDescription: "Descript محرر فيديو يعتمد على النص. Overdub لتعديل الصوت. Transcription مجاني.",
+        pros: ["تحرير بالنص", "Overdub مذهل", "Transcription مجاني"],
+        cons: ["غير كامل للمحررين المحترفين"],
         rating: 4.6,
         reviews: 5800,
         icon: "🎙️",
         logoUrl: "",
         affiliateLink: "https://descript.com",
         price: "مجاني - $24/month",
-        featured: false,
-        topToday: false,
         developer: "Descript",
         launchDate: "2019",
         users: "+2 مليون",
-        website: "descript.com",
-        tags: ["Video", "Podcast", "Editing", "Transcription"],
+        tags: ["Video", "Podcast", "Editing"],
         alternatives: [26, 27]
     }
 ];
@@ -729,7 +644,99 @@ document.addEventListener('DOMContentLoaded', () => {
     initTop10Page();
     initToolDetailPage();
     initForms();
+    initTouchOptimizations();
+    initLazyLoading();
+    initKeyboardNavigation();
 });
+
+// Touch and Mobile Optimizations
+function initTouchOptimizations() {
+    // Disable 300ms delay on mobile
+    document.addEventListener('touchstart', function() {}, {passive: true});
+
+    // Prevent zoom on double tap
+    let lastTouchEnd = 0;
+    document.addEventListener('touchend', function (event) {
+        const now = Date.now();
+        if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
+        }
+        lastTouchEnd = now;
+    }, {passive: false});
+
+    // Improve scrolling on iOS
+    document.body.addEventListener('touchmove', function() {}, {passive: true});
+
+    // Better tap targets
+    const clickableElements = document.querySelectorAll('.btn, .tool-card, .category-card, .nav-link');
+    clickableElements.forEach(el => {
+        el.style.minHeight = '44px';
+        el.style.minWidth = '44px';
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+}
+
+// Lazy Loading Images
+function initLazyLoading() {
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    if (img.dataset.src) {
+                        img.src = img.dataset.src;
+                        img.removeAttribute('data-src');
+                    }
+                    observer.unobserve(img);
+                }
+            });
+        }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+        });
+
+        document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+            imageObserver.observe(img);
+        });
+    }
+}
+
+// Keyboard Navigation Support
+function initKeyboardNavigation() {
+    // Skip to content on tab
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Tab') {
+            document.body.classList.add('keyboard-nav');
+        }
+    });
+
+    document.addEventListener('mousedown', () => {
+        document.body.classList.remove('keyboard-nav');
+    });
+
+    // Escape to close mobile menu
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            const navLinks = document.getElementById('navLinks');
+            if (navLinks && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
+        }
+    });
+}
 
 // Theme Toggle
 function initTheme() {
@@ -957,14 +964,12 @@ function initToolDetailPage() {
     const toolDetailPage = document.querySelector('.tool-detail-page');
     if (!toolDetailPage) return;
 
-    // Get tool ID from URL parameter
     const urlParams = new URLSearchParams(window.location.search);
     const toolId = parseInt(urlParams.get('id')) || 1;
     
     const tool = toolsData.find(t => t.id === toolId);
     
     if (!tool) {
-        // Default to first tool if not found
         loadToolDetails(toolsData[0]);
         return;
     }
@@ -973,55 +978,34 @@ function initToolDetailPage() {
 }
 
 function loadToolDetails(tool) {
-    // Update page title and meta
     document.title = `${tool.name} - مراجعة شاملة | BestTools`;
     
-    // Update breadcrumb
     const breadcrumbCurrent = document.querySelector('.breadcrumb .current');
     if (breadcrumbCurrent) {
         breadcrumbCurrent.textContent = tool.name;
     }
 
-    // Update tool logo
     const toolLogo = document.querySelector('.tool-logo');
     if (toolLogo) {
-        if (tool.logoUrl) {
-            toolLogo.innerHTML = `<img src="${tool.logoUrl}" alt="${tool.name}" style="max-width:100%;max-height:100px;object-fit:contain;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-            <span class="tool-card-icon" style="display:none;font-size:4rem;display:flex;align-items:center;justify-content:center;">${tool.icon}</span>`;
-        } else {
-            toolLogo.innerHTML = `<span style="font-size: 4rem;">${tool.icon}</span>`;
-        }
+        toolLogo.innerHTML = `<span style="font-size: 4rem;">${tool.icon}</span>`;
     }
 
-    // Update category tag
     const categoryTag = document.querySelector('.tool-category-tag');
     if (categoryTag) {
         categoryTag.textContent = tool.categoryAr;
     }
 
-    // Update tool info
     const toolTitle = document.querySelector('.tool-title');
     if (toolTitle) toolTitle.textContent = tool.name;
 
     const toolDesc = document.querySelector('.tool-short-desc');
     if (toolDesc) toolDesc.textContent = tool.description;
 
-    // Update rating
     const ratingValue = document.querySelector('.tool-rating .rating-value');
     if (ratingValue) ratingValue.textContent = tool.rating;
 
     const ratingCount = document.querySelector('.tool-rating .rating-count');
     if (ratingCount) ratingCount.textContent = `(${formatNumber(tool.reviews)} تقييم)`;
-
-    // Update pricing
-    const pricingSection = document.querySelector('.tool-pricing');
-    if (pricingSection) {
-        if (tool.price.includes('مجاني')) {
-            pricingSection.innerHTML = `<span class="price-free">${tool.price.split(' - ')[0]}</span>`;
-        } else {
-            pricingSection.innerHTML = `<span class="price-pro">${tool.price}</span>`;
-        }
-    }
 
     // Update CTA button
     const ctaBtn = document.querySelector('.tool-cta');
@@ -1051,19 +1035,12 @@ function loadToolDetails(tool) {
     }
 
     // Update quick info
-    const developerValue = document.querySelector('.quick-info .label + .value');
-    const developerRow = document.querySelector('.quick-info li:first-child');
-    if (developerRow) {
-        developerRow.innerHTML = `<span class="label">المطور</span><span class="value">${tool.developer}</span>`;
-    }
-
-    // Add more quick info
     const quickInfoList = document.querySelector('.quick-info');
     if (quickInfoList) {
         quickInfoList.innerHTML = `
-            <li><span class="label">المطور</span><span class="value">${tool.developer}</span></li>
-            <li><span class="label">تاريخ الإطلاق</span><span class="value">${tool.launchDate}</span></li>
-            <li><span class="label">المستخدمون</span><span class="value">${tool.users}</span></li>
+            <li><span class="label">المطور</span><span class="value">${tool.developer || 'N/A'}</span></li>
+            <li><span class="label">تاريخ الإطلاق</span><span class="value">${tool.launchDate || 'N/A'}</span></li>
+            <li><span class="label">المستخدمون</span><span class="value">${tool.users || 'N/A'}</span></li>
             <li><span class="label">السعر</span><span class="value">${tool.price}</span></li>
         `;
     }
@@ -1078,7 +1055,7 @@ function loadToolDetails(tool) {
     const relatedContainer = document.getElementById('relatedTools');
     if (relatedContainer) {
         const relatedTools = toolsData
-            .filter(t => t.id !== tool.id && (t.category === tool.category || (tool.alternatives && tool.alternatives.includes(t.id))))
+            .filter(t => t.id !== tool.id && t.category === tool.category)
             .slice(0, 3);
         
         if (relatedTools.length === 0) {
@@ -1089,7 +1066,7 @@ function loadToolDetails(tool) {
     }
 }
 
-// Create Tool Card with Real Logos
+// Create Tool Card
 function createToolCard(tool) {
     const stars = '⭐'.repeat(Math.floor(tool.rating));
     const logoHtml = tool.logoUrl 
@@ -1156,7 +1133,7 @@ function initForms() {
     }
 }
 
-// Export functions for global access
+// Export functions
 window.goToTool = goToTool;
 window.formatNumber = formatNumber;
 window.toolsData = toolsData;

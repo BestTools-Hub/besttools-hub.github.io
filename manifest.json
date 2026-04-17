@@ -1,0 +1,97 @@
+{
+  "name": "BestTools - أفضل أدوات الإنترنت",
+  "short_name": "BestTools",
+  "description": "منصة تعرض أفضل الأدوات الرقمية والمواقع المفيدة",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#6366f1",
+  "orientation": "any",
+  "categories": ["productivity", "utilities"],
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-wide.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "صفحة الأدوات"
+    },
+    {
+      "src": "screenshot-narrow.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "صفحة التفاصيل"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "جميع الأدوات",
+      "url": "/tools.html",
+      "description": "تصفح جميع الأدوات"
+    },
+    {
+      "name": "الأدوات المميزة",
+      "url": "/?featured",
+      "description": "أفضل الأدوات المميزة"
+    },
+    {
+      "name": "Top 10",
+      "url": "/top10.html",
+      "description": "أفضل 10 أدوات"
+    }
+  ],
+  "prefer_related_applications": false
+}

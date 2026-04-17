@@ -1943,3 +1943,1612 @@ img {
         white-space: nowrap;
     }
 }
+
+/* ============================================
+   Comprehensive Multi-Device Support
+   ============================================ */
+
+/* --- Extra Small Phones (iPhone SE, Galaxy Mini) --- */
+@media only screen and (max-width: 320px) {
+    :root {
+        --space-md: 10px;
+        --space-lg: 16px;
+        --space-xl: 20px;
+    }
+
+    .hero-title {
+        font-size: 1.5rem !important;
+        line-height: 1.3;
+    }
+
+    .hero-search input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .tool-card-title {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        padding: 10px 16px;
+        font-size: 0.85rem;
+    }
+}
+
+/* --- Small Phones --- */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+    .hero-title {
+        font-size: 1.65rem;
+    }
+
+    .tool-card-title {
+        font-size: 1rem;
+    }
+}
+
+/* --- Medium Phones --- */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+    .hero-title {
+        font-size: 1.85rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* --- Large Phones / Small Tablets --- */
+@media only screen and (min-width: 426px) and (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- Tablets Portrait (iPad, Galaxy Tab) --- */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .container {
+        padding: 0 20px;
+        max-width: 100%;
+    }
+
+    .hero-title {
+        font-size: 2.25rem;
+    }
+
+    .hero .container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero-visual {
+        display: none;
+    }
+
+    .hero-stats {
+        gap: 30px;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .tool-card-image {
+        height: 160px;
+    }
+
+    .tool-card-content {
+        padding: 15px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* --- Tablets Landscape (iPad Pro, Surface) --- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+
+    .hero-title {
+        font-size: 2.75rem;
+    }
+
+    .hero .container {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .hero-visual {
+        display: flex;
+    }
+
+    .hero-visual .hero-card {
+        transform: scale(0.9);
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .tool-content {
+        grid-template-columns: 1fr 280px;
+        gap: 30px;
+    }
+
+    .content-sidebar {
+        position: static;
+    }
+
+    .newsletter-box {
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .top10-item {
+        grid-template-columns: 80px auto auto;
+    }
+
+    .top10-logo {
+        display: none;
+    }
+
+    .top10-meta {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* --- Small Laptops / Large Tablets --- */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .container {
+        max-width: 1200px;
+        padding: 0 20px;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .section-title {
+        font-size: 2.25rem;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .tool-card-image {
+        height: 180px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+/* --- Standard Laptops / Desktops --- */
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+    .container {
+        max-width: 1300px;
+    }
+
+    .hero-title {
+        font-size: 3.25rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+/* --- Large Laptops / Small Desktop Monitors --- */
+@media only screen and (min-width: 1441px) and (max-width: 1680px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .hero .container {
+        gap: 60px;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .section-title {
+        font-size: 2.75rem;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* --- Standard Desktop Monitors (1080p) --- */
+@media only screen and (min-width: 1681px) and (max-width: 1920px) {
+    .container {
+        max-width: 1500px;
+    }
+
+    .hero-title {
+        font-size: 3.75rem;
+    }
+
+    .hero-desc {
+        font-size: 1.25rem;
+        max-width: 600px;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .page-title {
+        font-size: 3.5rem;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+/* --- Large Desktop Monitors (1440p, 4K ready) --- */
+@media only screen and (min-width: 1921px) and (max-width: 2560px) {
+    .container {
+        max-width: 1800px;
+        padding: 0 40px;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .hero-desc {
+        font-size: 1.35rem;
+        max-width: 700px;
+    }
+
+    .section-title {
+        font-size: 3.25rem;
+    }
+
+    .page-title {
+        font-size: 4rem;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 35px;
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .tool-card {
+        min-height: 400px;
+    }
+
+    .tool-card-title {
+        font-size: 1.4rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1.5fr;
+        gap: 60px;
+    }
+}
+
+/* --- 4K Monitors and Large TVs --- */
+@media only screen and (min-width: 2561px) and (max-width: 3840px) {
+    .container {
+        max-width: 2200px;
+        padding: 0 60px;
+    }
+
+    :root {
+        --space-lg: 32px;
+        --space-xl: 48px;
+        --space-2xl: 64px;
+        --space-3xl: 96px;
+    }
+
+    .hero-title {
+        font-size: 5rem;
+        line-height: 1.1;
+    }
+
+    .hero-desc {
+        font-size: 1.5rem;
+        max-width: 800px;
+    }
+
+    .section-title {
+        font-size: 3.75rem;
+    }
+
+    .page-title {
+        font-size: 4.5rem;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 40px;
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+    }
+
+    .tool-card {
+        min-height: 450px;
+        border-radius: 24px;
+    }
+
+    .tool-card-image {
+        height: 220px;
+    }
+
+    .tool-card-title {
+        font-size: 1.6rem;
+    }
+
+    .tool-card-desc {
+        font-size: 1.1rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 80px;
+    }
+
+    .footer-col {
+        min-width: 250px;
+    }
+
+    .section {
+        padding: 100px 0;
+    }
+}
+
+/* --- 8K Monitors and Very Large Screens --- */
+@media only screen and (min-width: 3841px) {
+    .container {
+        max-width: 2800px;
+        padding: 0 80px;
+    }
+
+    .hero-title {
+        font-size: 6rem;
+    }
+
+    .hero-desc {
+        font-size: 1.75rem;
+    }
+
+    .section-title {
+        font-size: 4.5rem;
+    }
+
+    .page-title {
+        font-size: 5.5rem;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .tool-card {
+        min-height: 500px;
+    }
+}
+
+/* ============================================
+   Device-Specific Optimizations
+   ============================================ */
+
+/* --- iOS Specific --- */
+@supports (-webkit-touch-callout: none) {
+    .navbar {
+        -webkit-backdrop-filter: blur(12px);
+        backdrop-filter: blur(12px);
+    }
+
+    .tool-card:active {
+        transform: scale(0.98);
+    }
+}
+
+/* --- Android Specific --- */
+@media screen and (max-width: 767px) {
+    .tool-card-btn {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .search-input {
+        font-size: 16px; /* Prevent zoom on focus */
+    }
+}
+
+/* --- Samsung DeX / Desktop Mode --- */
+@media (max-width: 767px) and (hover: hover) {
+    .tool-card:hover {
+        transform: translateY(-8px);
+    }
+}
+
+/* --- Foldable Devices --- */
+@media screen and (aspect-ratio: 0.7/1) and (max-width: 767px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- Smart TV Remote Navigation (Focus States) --- */
+@media (hover: none) and (pointer: coarse) {
+    *:focus {
+        outline: 2px solid var(--accent-primary);
+        outline-offset: 2px;
+    }
+
+    .btn:focus {
+        box-shadow: var(--glow);
+    }
+}
+
+/* ============================================
+   Performance Optimizations
+   ============================================ */
+
+/* Reduce Motion for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .hero-shape {
+        animation: none;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --border-color: #ffffff;
+    }
+
+    .tool-card {
+        border: 2px solid var(--accent-primary);
+    }
+}
+
+/* Dark Mode Preference Override (if user prefers dark) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+    }
+}
+
+/* Light Mode Preference Override (if user prefers light) */
+@media (prefers-color-scheme: light) {
+    :root {
+        color-scheme: light;
+    }
+}
+
+/* ============================================
+   Safe Area Insets (Notch Devices)
+   ============================================ */
+@supports (padding: max(0px)) {
+    .navbar {
+        padding-top: max(env(safe-area-inset-top), 10px);
+    }
+
+    .hero {
+        padding-top: max(calc(140px + env(safe-area-inset-top)), 100px);
+    }
+}
+
+/* ============================================
+   Zoom Levels
+   ============================================ */
+@media screen and (zoom: 125%) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media screen and (zoom: 150%) {
+    :root {
+        --space-xl: 24px;
+        --space-2xl: 32px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+}
+
+/* ============================================
+   Orientation Considerations
+   ============================================ */
+@media (orientation: landscape) and (max-height: 600px) {
+    .hero {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .hero-visual {
+        display: none;
+    }
+
+    .navbar {
+        position: relative;
+    }
+}
+
+@media (orientation: portrait) {
+    .hero-visual .hero-card:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .hero-visual .hero-card:nth-child(3) {
+        margin-right: 0;
+    }
+}
+
+/* ============================================
+   Print Styles
+   ============================================ */
+@media print {
+    .navbar,
+    .hero,
+    .footer,
+    .ad-banner,
+    .newsletter-section,
+    .search-box,
+    .mobile-menu-btn,
+    .theme-toggle {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+        color: black;
+        font-size: 12pt;
+    }
+
+    .tool-card {
+        break-inside: avoid;
+        border: 1px solid #ccc;
+        margin-bottom: 1rem;
+        box-shadow: none;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+}
+
+/* ============================================
+   Extra Large Screens (Big TVs and Monitors)
+   ============================================ */
+@media (min-width: 1921px) {
+    .container {
+        max-width: 1600px;
+    }
+
+    .hero-title {
+        font-size: 4.5rem;
+    }
+
+    .hero-desc {
+        font-size: 1.5rem;
+        max-width: 800px;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .page-title {
+        font-size: 4rem;
+    }
+
+    .hero-visual {
+        transform: scale(1.2);
+    }
+
+    .tool-card {
+        min-height: 380px;
+    }
+
+    .tool-card-title {
+        font-size: 1.5rem;
+    }
+
+    .tool-card-desc {
+        font-size: 1rem;
+    }
+}
+
+/* ============================================
+   Tablet Landscape and Small Laptops
+   ============================================ */
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .container {
+        max-width: 1100px;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .section-title {
+        font-size: 2.25rem;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-xl);
+    }
+}
+
+/* ============================================
+   Tablet Portrait
+   ============================================ */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .hero {
+        padding-top: 160px;
+    }
+
+    .hero .container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-visual {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 2.75rem;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tool-content {
+        grid-template-columns: 1fr;
+    }
+
+    .content-sidebar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-lg);
+    }
+
+    .mission-content {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-visual {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .how-grid,
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .top10-item {
+        grid-template-columns: 70px 1fr auto;
+    }
+
+    .top10-logo {
+        display: none;
+    }
+
+    .newsletter-box {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-lg);
+    }
+
+    .newsletter-form {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ============================================
+   Mobile Devices (Phones)
+   ============================================ */
+@media (max-width: 767px) {
+    :root {
+        --space-xs: 4px;
+        --space-sm: 8px;
+        --space-md: 12px;
+        --space-lg: 20px;
+        --space-xl: 28px;
+        --space-2xl: 40px;
+        --space-3xl: 56px;
+    }
+
+    .ad-banner {
+        min-height: 60px;
+    }
+
+    .navbar {
+        top: 60px;
+    }
+
+    .navbar.scrolled {
+        top: 0;
+    }
+
+    .nav-container {
+        padding: var(--space-sm) var(--space-md);
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .logo-icon {
+        font-size: 1.5rem;
+    }
+
+    .theme-toggle {
+        padding: var(--space-xs) var(--space-sm);
+    }
+
+    .nav-cta {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 140px;
+        padding-bottom: var(--space-2xl);
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    .hero-desc {
+        font-size: 1rem;
+        margin-bottom: var(--space-lg);
+    }
+
+    .hero-search {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+
+    .hero-stats {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--space-lg);
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .section {
+        padding: var(--space-2xl) 0;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .section-desc {
+        font-size: 0.95rem;
+    }
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .category-tabs {
+        display: flex;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding-bottom: var(--space-sm);
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .category-tab {
+        flex-shrink: 0;
+        font-size: 0.8rem;
+        padding: var(--space-xs) var(--space-sm);
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box .search-input {
+        width: 100%;
+    }
+
+    .search-box .search-btn {
+        width: 100%;
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-sm);
+    }
+
+    .category-icon {
+        font-size: 1.75rem;
+    }
+
+    .category-card h3 {
+        font-size: 0.9rem;
+    }
+
+    .category-count {
+        font-size: 0.7rem;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tool-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .tool-logo-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tool-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .tool-info .tool-title {
+        font-size: 1.75rem;
+    }
+
+    .tool-short-desc {
+        font-size: 0.95rem;
+    }
+
+    .tool-meta {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-sm);
+    }
+
+    .tool-cta {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .tool-content {
+        grid-template-columns: 1fr;
+    }
+
+    .content-sidebar {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+
+    .tool-card {
+        min-height: auto;
+    }
+
+    .tool-card-image {
+        height: 150px;
+    }
+
+    .tool-card-title {
+        font-size: 1.1rem;
+    }
+
+    .tool-card-desc {
+        font-size: 0.85rem;
+        -webkit-line-clamp: 3;
+    }
+
+    .tool-card-footer {
+        flex-direction: column;
+        gap: var(--space-sm);
+        align-items: stretch;
+    }
+
+    .tool-card-rating {
+        justify-content: center;
+    }
+
+    .tool-card-btn {
+        width: 100%;
+    }
+
+    .newsletter-box {
+        padding: var(--space-lg);
+    }
+
+    .newsletter-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .newsletter-content p {
+        font-size: 0.9rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input {
+        min-width: auto;
+    }
+
+    .footer {
+        padding: var(--space-2xl) 0 var(--space-md);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+
+    .footer-col {
+        text-align: center;
+    }
+
+    .footer-links {
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-form {
+        justify-content: center;
+    }
+
+    .page-header-section {
+        padding-top: 120px;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .page-desc {
+        font-size: 0.95rem;
+    }
+
+    .top10-section {
+        padding: var(--space-xl) 0;
+    }
+
+    .top10-list {
+        gap: var(--space-md);
+    }
+
+    .top10-item {
+        grid-template-columns: 50px 1fr;
+        padding: var(--space-md);
+    }
+
+    .top10-rank {
+        font-size: 1.5rem;
+    }
+
+    .top10-logo,
+    .top10-meta {
+        display: none;
+    }
+
+    .mission-content {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-visual {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-card {
+        padding: var(--space-md);
+    }
+
+    .stat-card .stat-number {
+        font-size: 1.75rem;
+    }
+
+    .how-grid,
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        padding: var(--space-md);
+    }
+
+    .contact-form .btn-large {
+        width: 100%;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================
+   Small Mobile Devices
+   ============================================ */
+@media (max-width: 380px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-card {
+        padding: var(--space-md);
+    }
+
+    .hero-stats .stat {
+        width: 100%;
+        text-align: center;
+        padding: var(--space-sm) 0;
+    }
+
+    .newsletter-box {
+        padding: var(--space-md);
+    }
+
+    .footer-bottom p {
+        font-size: 0.75rem;
+    }
+}
+
+/* ============================================
+   Touch Devices (Tablets andPhones with touch)
+   ============================================ */
+@media (hover: none) {
+    .btn:hover {
+        transform: none;
+    }
+
+    .btn-primary:hover {
+        filter: none;
+    }
+
+    .tool-card:hover {
+        transform: none;
+    }
+
+    .tool-card:active {
+        transform: scale(0.98);
+    }
+
+    .category-card:hover {
+        transform: none;
+    }
+
+    .category-card:active {
+        transform: scale(0.98);
+    }
+
+    .why-card:hover {
+        transform: none;
+    }
+
+    .hero-card:hover {
+        transform: none;
+    }
+}
+
+/* ============================================
+   Print Styles
+   ============================================ */
+@media print {
+    .navbar,
+    .hero,
+    .footer,
+    .ad-banner,
+    .newsletter-section,
+    .search-box,
+    .mobile-menu-btn {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    .tool-card {
+        break-inside: avoid;
+        border: 1px solid #ccc;
+        margin-bottom: var(--space-md);
+    }
+
+    .container {
+        max-width: 100%;
+    }
+}
+
+/* ============================================
+   Touch & Mobile Optimizations
+   ============================================ */
+
+/* Interactive Elements Touch Targets */
+button, .btn, .tool-card, .category-card, .nav-link {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Smooth Touch Scrolling */
+@media (pointer: coarse) {
+    html {
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Prevent Zoom on Input Focus */
+@media screen and (max-width: 767px) {
+    input, select, textarea {
+        font-size: 16px !important;
+    }
+}
+
+/* Better Touch Targets for Small Screens */
+@media (max-width: 767px) {
+    .btn {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tool-card {
+        min-height: 320px;
+    }
+
+    .tool-card-btn {
+        min-height: 40px;
+    }
+
+    .category-card {
+        min-height: 120px;
+        padding: var(--space-lg);
+    }
+
+    .search-input {
+        min-height: 44px;
+    }
+
+    .nav-link {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        padding: var(--space-md);
+    }
+}
+
+/* Hover States for Touch Devices */
+@media (hover: hover) {
+    .tool-card:hover {
+        transform: translateY(-8px);
+    }
+
+    .category-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .btn:hover {
+        transform: translateY(-2px);
+    }
+}
+
+/* Active States for Touch */
+@media (hover: none) {
+    .tool-card:active {
+        transform: scale(0.98);
+    }
+
+    .btn:active {
+        transform: scale(0.98);
+    }
+
+    .category-card:active {
+        transform: scale(0.98);
+    }
+}
+
+/* Improved Tap Highlight Color */
+* {
+    -webkit-tap-highlight-color: rgba(99, 102, 241, 0.2);
+}
+
+/* Prevent Text Selection on Buttons */
+button, .btn {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Scroll Optimizations */
+@supports (scrollbar-width: thin) {
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: var(--bg-secondary);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--accent-primary);
+        border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--accent-secondary);
+    }
+}
+
+/* Keyboard Focus for Accessibility */
+.keyboard-nav *:focus {
+    outline: 2px solid var(--accent-primary) !important;
+    outline-offset: 2px;
+}
+
+/* Skip to Content Link (Accessibility) */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--accent-primary);
+    color: white;
+    padding: 8px;
+    z-index: 9999;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Focus Visible Polyfill Support */
+:focus-visible {
+    outline: 2px solid var(--accent-primary);
+    outline-offset: 2px;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .hero-shape {
+        animation: none !important;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --border-color: #ffffff;
+        --text-secondary: #e0e0e0;
+    }
+
+    .tool-card {
+        border: 2px solid var(--accent-primary);
+    }
+
+    .btn {
+        border: 2px solid currentColor;
+    }
+}
+
+/* Dark Mode System Preference */
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color-scheme: light;
+    }
+}
+
+/* Device Pixel Ratio Fixes */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .tool-card-img,
+    .tool-logo img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Safe Area Insets for Notched Devices */
+@supports (padding: max(0px)) {
+    body {
+        padding-left: max(env(safe-area-inset-left), 0px);
+        padding-right: max(env(safe-area-inset-right), 0px);
+    }
+
+    .navbar {
+        padding-left: max(env(safe-area-inset-left), var(--space-md));
+        padding-right: max(env(safe-area-inset-right), var(--space-md));
+    }
+
+    .footer {
+        padding-left: max(env(safe-area-inset-left), var(--space-md));
+        padding-right: max(env(safe-area-inset-right), var(--space-md));
+    }
+}
+
+/* Horizontal Overflow Prevention */
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Fix for 100vh on mobile browsers */
+@supports (height: 100dvh) {
+    body, .hero {
+        min-height: 100dvh;
+    }
+}
+
+/* Orientation Changes */
+@media (orientation: landscape) and (max-height: 600px) {
+    .hero {
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+
+    .hero-visual {
+        display: none;
+    }
+
+    .navbar {
+        position: relative;
+    }
+}
+
+/* Foldable Devices (Galaxy Fold, etc) */
+@media screen and (aspect-ratio: 0.7/1) {
+    .container {
+        max-width: 100% !important;
+        padding: 0 16px !important;
+    }
+}
+
+/* TV & Large Screen Optimizations */
+@media tv {
+    .btn {
+        min-height: 56px;
+        min-width: 120px;
+        font-size: 1.2rem;
+    }
+
+    .tool-card {
+        min-height: 400px;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    * {
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+/* Focus for TV Remote Navigation */
+@media (hover: none) and (pointer: coarse) {
+    *:focus {
+        outline: 3px solid var(--accent-primary);
+        outline-offset: 4px;
+    }
+
+    .btn:focus {
+        transform: scale(1.05);
+        box-shadow: var(--glow);
+    }
+}
+
+/* Performance: GPU Acceleration */
+.tool-card,
+.hero-card,
+.category-card,
+.why-card {
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+/* Font Loading Optimization */
+.font-loaded body {
+    font-display: swap;
+}
+
+/* Will-change for smooth animations */
+.fade-in {
+    will-change: opacity, transform;
+}
+
+/* Containment for better rendering */
+.tool-card,
+.hero-card {
+    contain: layout style paint;
+}
+
+/* GPU-accelerated transforms */
+@keyframes GPU {
+    from { transform: translateY(0); }
+    to { transform: translateY(1px); }
+}
+
+/*=
+   Device Lab - Testing Classes (Remove in production)
+   =*/
+.dev-debug {
+    outline: 2px solid red;
+}
+
+/*=
+   End of Comprehensive Multi-Device Styles
+   =*/
