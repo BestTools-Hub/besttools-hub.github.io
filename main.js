@@ -647,6 +647,11 @@ document.addEventListener('DOMContentLoaded', () => {
     initTouchOptimizations();
     initLazyLoading();
     initKeyboardNavigation();
+    initScrollProgress();
+    initToastNotifications();
+    initShareButtons();
+    initCopyFeedback();
+    injectSchemaMarkup();
 });
 
 // Touch and Mobile Optimizations
@@ -1133,7 +1138,165 @@ function initForms() {
     }
 }
 
+// ============================================
+// Scroll Progress Bar
+// ============================================
+function initScrollProgress() {
+    const progressBar = document.getElementById('scrollProgress');
+    if (!progressBar) return;
+
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / scrollHeight) * 100;
+        progressBar.style.width = scrollPercent + '%';
+    }, { passive: true });
+}
+
+// ============================================
+// Toast Notifications
+// ============================================
+function initToastNotifications() {
+    // Create container
+    const container = document.createElement('div');
+    container.className = 'toast-container';
+    container.id = 'toastContainer';
+    document.body.appendChild(container);
+}
+
+function showToast(message, type = 'info', duration = 3000) {
+    const container = document.getElementById('toastContainer');
+    if (!container) return;
+
+    const toast = document.createElement('div');
+    toast.className = `toast ${type}`;
+    
+    const icons = {
+        success: '✓',
+        error: '✗',
+        info: 'ℹ'
+    };
+    
+    toast.innerHTML = `
+        <span class="toast-icon">${icons[type] || icons.info}</span>
+        <span class="toast-message">${message}</span>
+        <button class="toast-close" onclick="this.parentElement.remove()">×</button>
+    `;
+    
+    container.appendChild(toast);
+    
+    setTimeout(() => {
+        toast.remove();
+    }, duration);
+}
+
+// ============================================
+// Share Buttons
+// ============================================
+function initShareButtons() {
+    // Add share buttons to tool cards on home page
+    const toolCards = document.querySelectorAll('.tool-card');
+    toolCards.forEach(card => {
+        const shareContainer = document.createElement('div');
+        shareContainer.className = 'share-buttons';
+        shareContainer.innerHTML = `
+            <button class="share-btn whatsapp" onclick="shareWhatsApp('${card.querySelector('.tool-card-title')?.textContent || ''}')" title="شارك على واتساب">
+                واتساب
+            </button>
+            <button class="share-btn facebook" onclick="shareFacebook('${window.location.href}')" title="شارك على فيسبوك">
+                فيسبوك
+            </button>
+            <button class="share-btn twitter" onclick="shareTwitter('${window.location.href}')" title="شارك على تويتر">
+                تويتر
+            </button>
+            <button class="share-btn telegram" onclick="shareTelegram('${window.location.href}')" title="شارك على تيليجرام">
+                تيليجرام
+            </button>
+        `;
+        card.appendChild(shareContainer);
+    });
+}
+
+function shareWhatsApp(text) {
+    const url = `https://api.whatsapp.com/send?text=${encodeURIComponent(text + ' - ' + window.location.href)}`;
+    window.open(url, '_blank');
+}
+
+function shareFacebook(url) {
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank');
+}
+
+function shareTwitter(url) {
+    window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}`, '_blank');
+}
+
+function shareTelegram(url) {
+    window.open(`https://t.me/share/url?url=${encodeURIComponent(url)}`, '_blank');
+}
+
+// ============================================
+// Copy Feedback
+// ============================================
+function initCopyFeedback() {
+    // Copy link feedback for affiliate buttons
+    document.addEventListener('click', (e) => {
+        if (e.target.classList.contains('tool-card-btn') || e.target.classList.contains('tool-cta')) {
+            showToast('جاري فتح الأداة...', 'success', 2000);
+        }
+    });
+}
+
+// ============================================
+// JSON-LD Schema Markup
+// ============================================
+function injectSchemaMarkup() {
+    const currentTool = toolsData[0]; // Default for homepage
+    
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "BestTools",
+        "url": "https://besttools-hub.github.io",
+        "description": "منصة تعرض أفضل الأدوات الرقمية والمواقع المفيدة",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://besttools-hub.github.io/tools.html?search={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    };
+    
+    // Add tool schema if on detail page
+    if (window.location.pathname.includes('tool-detail.html')) {
+        schema["@type"] = "Product";
+        schema.name = currentTool.name;
+        schema.description = currentTool.longDescription;
+        schema.rating = {
+            "@type": "AggregateRating",
+            "ratingValue": currentTool.rating,
+            "reviewCount": currentTool.reviews
+        };
+        schema.offers = {
+            "@type": "Offer",
+            "price": currentTool.price,
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        };
+    }
+    
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(schema);
+    document.head.appendChild(script);
+}
+
+// ============================================
 // Export functions
+// ============================================
 window.goToTool = goToTool;
 window.formatNumber = formatNumber;
 window.toolsData = toolsData;
+window.showToast = showToast;
+window.shareWhatsApp = shareWhatsApp;
+window.shareFacebook = shareFacebook;
+window.shareTwitter = shareTwitter;
+window.shareTelegram = shareTelegram;

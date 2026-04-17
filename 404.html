@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+    <meta name="description" content="الصفحة غير موجودة - BestTools">
+    <meta property="og:title" content="404 - الصفحة غير موجودة | BestTools">
+    <meta property="og:description" content="عذراً، الصفحة التي تبحثها غير موجودة">
+    <meta property="og:type" content="website">
+    <title>404 - الصفحة غير موجودة | BestTools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠️</text></svg>">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0a0a0f" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <style>
+        /* 404 specific */
+        .error-404-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: var(--space-2xl);
+            background: var(--bg-primary);
+        }
+        .error-404-content {
+            max-width: 600px;
+        }
+        .error-404-code {
+            font-family: var(--font-heading);
+            font-size: 12rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: var(--space-lg);
+            animation: pulse 2s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        .error-404-title {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            margin-bottom: var(--space-md);
+        }
+        .error-404-desc {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: var(--space-xl);
+            line-height: 1.8;
+        }
+        .error-404-actions {
+            display: flex;
+            gap: var(--space-md);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 768px) {
+            .error-404-code {
+                font-size: 6rem;
+            }
+            .error-404-title {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">BestTools</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="error-404-page">
+        <div class="error-404-content fade-in">
+            <div class="error-404-code">404</div>
+            <h1 class="error-404-title">عذراً، الصفحة غير موجودة</h1>
+            <p class="error-404-desc">
+                الصفحة التي تبحثها إما غير موجودة أو تم نقلها. لا تقلق! يمكنك العودة إلى الصفحة الرئيسية أو تصفح أدواتنا.
+            </p>
+            <div class="error-404-actions">
+                <a href="index.html" class="btn btn-primary btn-large">
+                    العودة للرئيسية
+                </a>
+                <a href="tools.html" class="btn btn-outline btn-large">
+                    تصفح الأدوات
+                </a>
+                <button onclick="history.back()" class="btn btn-outline btn-large">
+                    الرجوع للخلف
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2024 BestTools. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Log 404 for analytics
+        console.warn('404 - Page not found:', window.location.href);
+    </script>
+</body>
+</html>
